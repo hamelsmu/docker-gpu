@@ -1,2 +1,2 @@
 #! /bin/bash
-sudo docker build -t hamelsmu/ml-gpu -f ~/github/Dockerbuilds/gpu/Dockerfile.gpu ~/github/Dockerbuilds/gpu/helper_scripts
+sudo docker build -t hamelsmu/ml-gpu -f Dockerfile.gpu ./helper_scripts
