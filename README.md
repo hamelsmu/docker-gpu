@@ -21,5 +21,5 @@
   `nvidia-docker commit <container_id> new_image_name:tag_name(optional)`
   
   
-  *More Resources*
+  **More Resources**
   See [this tutorial](https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5)
