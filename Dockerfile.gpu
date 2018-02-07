@@ -29,7 +29,6 @@ ENV PATH /opt/conda/bin:$PATH
 
 # Install Pytorch Instructions at http://pytorch.org/
 RUN conda install -y pytorch torchvision cuda90 -c pytorch
-RUN pip install --ignore-installed --upgrade
 
 # Install Python packages
 RUN pip --no-cache-dir install --upgrade \
