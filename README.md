@@ -6,11 +6,8 @@ Current dockerfiles
   - Built using [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
   - Dockerhub: [link](https://hub.docker.com/r/hamelsmu/deeplearning/)
   - [Dockerfile](./gpu/Dockerfile.gpu)
-  - Run this container from Dockerhub:
-    ```bash
-    docker run --runtime=nvidia -it --net=host -v .:/ds hamelsmu/deeplearning
-    ```
+  - Run this container from Dockerhub: [script](./gpu/run_container.sh)
 
 
-- **CPU: When you need lots of cores **:
+- **CPU: When you need lots of cores**:
   -  TBD
