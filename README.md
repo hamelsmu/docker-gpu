@@ -6,7 +6,7 @@ Current dockerfiles
   - Built using [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
   - Dockerhub: [link](https://hub.docker.com/r/hamelsmu/deeplearning/)
   - [Dockerfile](./gpu/Dockerfile.gpu)
-  - Run this container from Dockerhub: [script](./gpu/run_container.sh)
+  - Example command to run this container (have to modify depending on file structure): [script](./gpu/run_container.sh)
 
 
 - **CPU: When you need lots of cores**:
