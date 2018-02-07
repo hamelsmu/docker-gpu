@@ -34,8 +34,10 @@ RUN pip install --ignore-installed --upgrade
 # Install Python packages
 RUN pip --no-cache-dir install --upgrade \
         altair \
+        annoy \
         bcolz \
         dask \
+        gensim \
         graphviz \
         h5py \
         hdfs \
@@ -71,4 +73,3 @@ RUN chmod +x /ds/run_jupyter.sh
 
 # Run the shell
 CMD [ "/bin/bash" ]
-
