@@ -1,12 +1,7 @@
-## Repository to store all my working Dockerfiles
+### Docker image for machine learning on GPUs (deep learning)
 
-Current dockerfiles
+- **Some Notes About This Docker Image**
 
-- **GPU: For Deep Learning:**
   - Built using [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
   - Dockerhub [link](https://hub.docker.com/r/hamelsmu/dockerbuilds/)
-  - Example command to run this container (have to modify depending on file structure): [script](https://github.com/hamelsmu/Dockerbuilds/blob/master/gpu/run_container.sh)
-
-
-- **CPU: When you need lots of cores**:
-  -  TBD
+  - [Helper scripts](https://github.com/hamelsmu/Dockerbuilds/tree/master/gpu) commands to build images and run containers.
