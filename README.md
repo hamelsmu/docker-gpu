@@ -5,7 +5,9 @@
   - Built using [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
   - [Helper scripts](https://github.com/hamelsmu/docker-gpu/tree/master/gpu) commands to run containers.
 
-#### Useful commands to remember:
+
+
+### Useful commands to remember:
 
   See all running containers:
   
