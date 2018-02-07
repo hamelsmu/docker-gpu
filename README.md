@@ -4,4 +4,4 @@
 
   - Built using [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
   - Dockerhub [link](https://hub.docker.com/r/hamelsmu/dockerbuilds/)
-  - [Helper scripts](https://github.com/hamelsmu/Dockerbuilds/tree/master/gpu) commands to build images and run containers.
+  - [Helper scripts](https://github.com/hamelsmu/docker-gpu/tree/master/gpu) commands to build images and run containers.
