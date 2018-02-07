@@ -16,11 +16,11 @@
   
   Run terminal attached to a running container:
   
-  `nvidia-docker exec -it <container_name> bash`
+  `docker exec -it <container_name> bash`
   
   Save state of container
   
-  `nvidia-docker commit <container_id> new_image_name:tag_name(optional)`
+  `docker commit <container_id> new_image_name:tag_name(optional)`
   
   
   **More Resources**
