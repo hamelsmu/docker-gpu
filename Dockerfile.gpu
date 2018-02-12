@@ -29,6 +29,7 @@ ENV PATH /opt/conda/bin:$PATH
 
 # Install Pytorch Instructions at http://pytorch.org/
 RUN conda install -y pytorch torchvision cuda90 -c pytorch
+RUN conda install -y opencv
 
 # Install Python packages
 RUN pip --no-cache-dir install --upgrade \
@@ -36,6 +37,7 @@ RUN pip --no-cache-dir install --upgrade \
         annoy \
         bcolz \
         dask \
+        fastai \
         gensim \
         graphviz \
         h5py \
