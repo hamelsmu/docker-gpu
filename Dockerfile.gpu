@@ -64,16 +64,11 @@ RUN pip --no-cache-dir install --upgrade \
         tqdm \
         wget
 
-#Install Fairseq-py
+#For Fairseq-py
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
 ENV LD_LIBRARY_PATH /usr/local/nvidia/lib:/usr/local/nvidia/lib64
 RUN echo 'export PATH="/opt/conda/bin/:$PATH"' >> ~/.bashrc
-RUN git clone https://github.com/facebookresearch/fairseq-py.git
-RUN /bin/bash -c "cd /fairseq-py \
-   && /opt/conda/bin/pip install -r /fairseq-py/requirements.txt"
-RUN cd /fairseq-py && /opt/conda/bin/python /fairseq-py/setup.py build && /opt/conda/bin/python setup.py develop
-
 
 # Open Ports for TensorBoard, Jupyter, and SSH
 EXPOSE 6006
