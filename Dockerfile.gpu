@@ -2,10 +2,14 @@ FROM tensorflow/tensorflow:latest-gpu-py3
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
 RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates \
+    build-essential \ 
     byobu \
+    ca-certificates \
     git-core git \
     htop \
     libglib2.0-0 \
+    libjpeg-dev \
+    libpng-dev \
     libxext6 \
     libsm6 \
     libxrender1 \
@@ -59,6 +63,17 @@ RUN pip --no-cache-dir install --upgrade \
         torchtext \
         tqdm \
         wget
+
+#Install Fairseq-py
+ENV NVIDIA_VISIBLE_DEVICES all
+ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
+ENV LD_LIBRARY_PATH /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+RUN echo 'export PATH="/opt/conda/bin/:$PATH"' >> ~/.bashrc
+RUN git clone https://github.com/facebookresearch/fairseq-py.git
+RUN /bin/bash -c "cd /fairseq-py \
+   && /opt/conda/bin/pip install -r /fairseq-py/requirements.txt"
+RUN cd /fairseq-py && /opt/conda/bin/python /fairseq-py/setup.py build && /opt/conda/bin/python setup.py develop
+
 
 # Open Ports for TensorBoard, Jupyter, and SSH
 EXPOSE 6006
