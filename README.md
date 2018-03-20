@@ -3,5 +3,25 @@
 - **Some Notes About This Docker Image**
 
   - Built using [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
-  - Dockerhub [link](https://hub.docker.com/r/hamelsmu/dockerbuilds/)
-  - [Helper scripts](https://github.com/hamelsmu/docker-gpu/tree/master/gpu) commands to build images and run containers.
+  - [Helper scripts](https://github.com/hamelsmu/docker-gpu/tree/master/gpu) commands to run containers.
+
+
+
+### Useful commands to remember:
+
+  See all running containers:
+  
+  `docker ps -a -f status=running`
+
+  
+  Run terminal attached to a running container:
+  
+  `docker exec -it <container_name> bash`
+  
+  Save state of container
+  
+  `docker commit <container_id> new_image_name:tag_name(optional)`
+  
+  
+  **More Resources**
+  See [this tutorial](https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5)
