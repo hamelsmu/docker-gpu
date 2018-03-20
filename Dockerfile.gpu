@@ -1,6 +1,8 @@
 FROM tensorflow/tensorflow:latest-gpu-py3
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
+RUN add-apt-repository ppa:git-core/ppa
+
 RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates \
     byobu \
     git-core git \
@@ -10,7 +12,8 @@ RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificate
     libsm6 \
     libxrender1 \
     libcupti-dev \
-    && \
+    software-properties-common \
+&& \
 apt-get clean && \
 rm -rf /var/lib/apt/lists/*
 
