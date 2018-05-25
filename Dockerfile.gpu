@@ -58,6 +58,7 @@ RUN pip --no-cache-dir install --upgrade \
         keras \
         ktext \
         more_itertools \
+        nmslib \
         pandas_summary \
         Pillow \
         pyhive \
