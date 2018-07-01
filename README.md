@@ -6,7 +6,7 @@
 
 ### Docker image for machine learning on GPUs (deep learning)
 
-This repo is linked to this DockerHub repo: [hamelsmu/ml-gpu](https://hub.docker.com/r/hamelsmu/ml-gpu/).  Any changes to this repository will automatically trigger a new build of the docker image on DockerHub.
+This repo is linked to the DockerHub repo: [hamelsmu/ml-gpu](https://hub.docker.com/r/hamelsmu/ml-gpu/).  Any changes to this repository will automatically trigger a new build of the docker image on DockerHub.
 
 - **Some Notes About This Docker Image**
 
