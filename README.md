@@ -1,3 +1,4 @@
+[![GitHub license](https://img.shields.io/github/license/hamelsmu/docker-gpu.svg)](https://github.com/hamelsmu/docker-gpu/blob/master/LICENSE)
 ![Docker Build Status](https://img.shields.io/docker/build/hamelsmu/ml-gpu.svg)
 ![Docker Automated build](https://img.shields.io/docker/automated/hamelsmu/ml-gpu.svg)
 ![Docker Pulls](https://img.shields.io/docker/pulls/hamelsmu/ml-gpu.svg)
