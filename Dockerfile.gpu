@@ -16,6 +16,7 @@ RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificate
     libsm6 \
     libxrender1 \
     libcupti-dev \
+    openssh-server \
     software-properties-common \
     vim \
     && \
